@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap">
+  <title>Oviseo</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+  <link rel="icon" href="../IMG/oviseo-favicon.png" type="image/png" sizes="32x32">
+</head>
+<header class="header">
+    
+
+    <div class="menu container">
+  
+      <a href="../HTML/index.html" class="logo">Oviseo</a>
+    
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="../HTML/index.html">Inicio</a></li>
+          <li><a href="../HTML/nosotros.html">Nosotros</a></li>
+          <li><a href="../HTML/servicios.html">Servicios</a></li>
+          <li><a href="../HTML/Reservas.html">Reservas</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/contacto.html">Contacto</a></li>
+          <li><a href="../DOCUMENTOS/Manual Usuarios- Reservas.pdf" target="_blank">Manual JS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <body>
+        <h1>Reserva de Cita</h1>
+    
+        <label for="mes">Selecciona un mes:</label>
+        <select id="mes" onchange="cargarCalendario()">
+            <option value="0">Enero</option>
+            <option value="1">Febrero</option>
+            <option value="2">Marzo</option>
+            <option value="3">Abril</option>
+            <option value="4">Mayo</option>
+            <option value="5">Junio</option>
+            <option value="6">Julio</option>
+            <option value="7">Agosto</option>
+            <option value="8">Septiembre</option>
+            <option value="9">Octubre</option>
+            <option value="10">Noviembre</option>
+            <option value="11">Diciembre</option>
+        </select>
+    
+        <div id="calendario"></div>
+    
+        <div id="horasDisponibles">
+            <h2>Horas Disponibles:</h2>
+            <ul id="listaHoras"></ul>
+        </div>
+    
+        <div id="reserva">
+            <h2>Confirmar Reserva:</h2>
+            <p id="fechaSeleccionada"></p>
+            <input type="email" id="email" placeholder="Tu correo electrónico">
+            <button onclick="confirmarReserva()">Confirmar Reserva</button>
+        </div>
+    
+        <div id="mensaje"></div>
+
+        <script src="../JS/Reservas.js"></script>
+    
+       
+    </body> 
+
