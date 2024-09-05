@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap">
+  <title>Oviseo</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/styles.css" >
+  <link rel="icon" href="../IMG/oviseo-favicon.png" type="image/png" sizes="32x32">
+</head>
+
+<body>
+  <header class="header">
+    
+
+    <div class="menu container">
+  
+      <a href="../HTML/index.html" class="logo">Oviseo</a>
+    
+      
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="../HTML/index.html">Inicio</a></li>
+          <li><a href="../HTML/nosotros.html">Nosotros</a></li>
+          <li><a href="../HTML/servicios.html">Servicios</a></li>
+          <li><a href="../HTML/Reservas.html">Reservas</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/contacto.html">Contacto</a></li>
+          <li><a href="../DOCUMENTOS/Manual Usuarios- Reservas.pdf" target="_blank">Manual JS</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="header-content container">
+      <div class="header-Info">
+        <div class="header-text">
+          <br>
+          <br>
+          <h1>Contacta con Nosotros</h1>
+          <p>Bienvenido a nuestra página de contacto en Oviseo. Estamos aquí para escucharte. Ya sea que tengas
+            preguntas, comentarios o estés listo para dar el siguiente paso hacia el éxito digital, no dudes en ponerte
+            en contacto con nuestro equipo experto. Completa el formulario a continuación o utiliza la información de
+            contacto proporcionada. Estamos ansiosos por conocer tus necesidades y trabajar contigo para lograr tus
+            objetivos en línea.</p>
+          <a href="contacto.html" class="boton-contacto">Contacta con Nosotros</a>
+          <div class="header-img">
+            <img src="../IMG/OVIEDOSTUDIO-removebg-preview.png" alt="Diseño Moderno">
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2>Ubicación de Oviseo</h2>
+
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1724.6902160975299!2d-5.853307069406466!3d43.365070065231826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cfc57956863%3A0x1d3be3430cf294be!2sC.%20Ur%C3%ADa%2C%2068%2C%2033003%20Oviedo%2C%20Asturias!5e0!3m2!1ses!2ses!4v1703184184171!5m2!1ses!2ses"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+
+
+  <section id="formulario" class="contacto">
+    <div class="formulario container">
+      <h2>Formulario de Contacto</h2>
+      <form action="procesar_formulario.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Tu nombre *</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono *</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje (máximo 500 caracteres)</label>
+          <textarea id="mensaje" name="mensaje" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="politica" required>
+            He leído y acepto la política de protección de datos personales contenida en el aviso legal de la página web
+            de Oviseo.
+          </label>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer container">
+    <div class="footer-links">
+      <div class="link">
+        <h3>OVISEO</h3>
+        <div class="socials">
+          <img src="../IMG/s1.svg" alt="">
+          <img src="../IMG/s2.svg" alt="">
+          <img src="../IMG/s3.svg" alt="">
+          <img src="../IMG/s4.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="pie">
+    <p>&copy; 2023 Oviseo - Tu Socio Digital. Todos los derechos reservados.</p>
+  </div>
+</body>
+
+</html>
